@@ -20,7 +20,7 @@ class EscWidget: PKWidget {
     private let key: KeySender = KeySender(keyCode: Int32(0x35), isAux: false)
     
     required init() {
-        self.view = PKButton(title: "esc", maxWidth: 64, target: self, action: #selector(tap))
+        self.view = PKButton(title: "esc", maxWidth: 384, target: self, action: #selector(tap))
     }
     
     @objc private func tap() {
